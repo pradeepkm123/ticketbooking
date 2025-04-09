@@ -18,7 +18,7 @@ function BookSeat() {
   useEffect(() => {
     const fetchBookedSeats = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/bookings/booked-seats/${busId}`);
+        const response = await axios.get(`https://ticketbooking-es95.onrender.com/api/bookings/booked-seats/${busId}`);
         setBookedSeats(response.data.bookedSeats);
       } catch (error) {
         console.error('Error fetching booked seats:', error);
@@ -61,7 +61,7 @@ function BookSeat() {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/bookings/tickets', bookingDetails);
+      await axios.post('https://ticketbooking-es95.onrender.com/api/bookings/tickets', bookingDetails);
       navigate('/ticket-confirmation', { state: { booking: bookingDetails } });
     } catch (error) {
       console.error('Error confirming booking:', error);
