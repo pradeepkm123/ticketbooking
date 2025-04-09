@@ -27,7 +27,7 @@ const UpdateSchedule = () => {
 
   const fetchBuses = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/buses');
+      const res = await axios.get('https://ticketbooking-es95.onrender.com/api/buses');
       setBuses(res.data);
     } catch (err) {
       console.error(err);
@@ -68,7 +68,7 @@ const UpdateSchedule = () => {
     console.log('New Bus Data:', newBus); // Log the new bus data
 
     try {
-      await axios.post('http://localhost:5000/api/buses/add', newBus);
+      await axios.post('https://ticketbooking-es95.onrender.com/api/buses/add', newBus);
       fetchBuses();
       setBusName('');
       setTotalSeats('');
