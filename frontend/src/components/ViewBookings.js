@@ -14,7 +14,7 @@ const ViewBookings = () => {
     setLoading(true);
     setError(null);
     try {
-      const res = await axios.get('http://localhost:5000/api/bookings/tickets');
+      const res = await axios.get('https://ticketbooking-es95.onrender.com/api/bookings/tickets');
       // Use a Map to remove duplicate bookings based on booking ID
       const uniqueBookingsMap = new Map(res.data.map(booking => [booking._id, booking]));
       const uniqueBookings = Array.from(uniqueBookingsMap.values());
