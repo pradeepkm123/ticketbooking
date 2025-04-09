@@ -1,0 +1,337 @@
+:root {
+    --primary-red: #e74c3c;
+    --primary-blue: #7fb9e2;
+    --secondary-blue: #a7d1f0;
+    --dark-text: #333;
+    --light-text: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: var(--primary-red);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #000;
+}
+
+.logo-badge {
+    display: inline-block;
+    border: 1px solid #ffd700;
+    color: #ffd700;
+    font-size: 0.6rem;
+    padding: 2px 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 1;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+a ,.nav-link{
+    text-decoration: none;
+}
+
+
+.nav-link {
+    color: var(--dark-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.nav-icon {
+    color: var(--primary-red);
+    margin-right: 5px;
+}
+#fc{
+    padding: 0.75rem 35px;
+    font-size: 13px;
+}
+/* Hero Section */
+.hero {
+    background: var(--primary-blue);
+    padding: 40px 0;
+    position: relative;
+    min-height: 400px;
+}
+
+.hero-title {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Booking Form */
+.booking-form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.input-icon-container {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    z-index: 99;
+}
+
+.input-with-icon {
+    padding-left: 30px;
+}
+
+.swap-btn {
+    width: 40px;
+    height: 40px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.search-btn {
+    background: var(--primary-red);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background: #c0392b;
+}
+
+.date-selection {
+    display: flex;
+    margin-top: -43px;
+    justify-content: end;
+}
+
+.date-btn {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 6px;
+    margin: 1px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 9;
+}
+
+.date-btn.active {
+    background: var(--primary-red);
+    color: #fff;
+    border-color: var(--primary-red);
+}
+
+/* Landscape Illustration */
+.landscape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    background-repeat: repeat-x;
+    background-position: bottom center;
+}
+
+.city {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" preserveAspectRatio="none"><rect x="0" y="70" width="40" height="50" fill="%233498db"/><rect x="50" y="50" width="30" height="70" fill="%232980b9"/><rect x="90" y="60" width="35" height="60" fill="%233498db"/><rect x="135" y="45" width="30" height="75" fill="%232980b9"/><rect x="175" y="65" width="25" height="55" fill="%233498db"/><rect x="210" y="55" width="40" height="65" fill="%232980b9"/><rect x="260" y="70" width="30" height="50" fill="%233498db"/><rect x="300" y="60" width="35" height="60" fill="%232980b9"/><rect x="345" y="50" width="30" height="70" fill="%233498db"/></svg>');
+    background-repeat: repeat-x;
+    background-size: 400px 120px;
+}
+
+.houses {
+    position: absolute;
+    bottom: 25px;
+    left: 400px;
+    width: 100%;
+    height: 70px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 70" preserveAspectRatio="none"><path d="M10,70 L10,40 L30,20 L50,40 L50,70 Z" fill="%23e74c3c"/><rect x="10" y="50" width="40" height="20" fill="%23c0392b"/><path d="M70,70 L70,30 L100,30 L100,70 Z" fill="%23e67e22"/><path d="M70,30 L85,10 L100,30 Z" fill="%23d35400"/><path d="M120,70 L120,40 L140,40 L140,70 Z" fill="%233498db"/><path d="M120,40 L130,25 L140,40 Z" fill="%232980b9"/><path d="M160,70 L160,35 L190,35 L190,70 Z" fill="%23e74c3c"/><path d="M160,35 L175,15 L190,35 Z" fill="%23c0392b"/></svg>');
+    background-repeat: repeat-x;
+    background-size: 200px 70px;
+}
+
+.mountains {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    width: 400px;
+    height: 100px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" preserveAspectRatio="none"><path d="M0,100 L100,20 L200,100 Z" fill="%2395a5a6"/><path d="M150,100 L250,10 L350,100 Z" fill="%237f8c8d"/><path d="M300,100 L350,50 L400,100 Z" fill="%2395a5a6"/></svg>');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trees {
+    position: absolute;
+    bottom: 25px;
+    right: 100px;
+    width: 300px;
+    height: 80px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" preserveAspectRatio="none"><path d="M20,80 L20,60 L10,60 L25,40 L40,60 L30,60 L30,80 Z" fill="%232ecc71"/><path d="M70,80 L70,55 L60,55 L75,35 L90,55 L80,55 L80,80 Z" fill="%2327ae60"/><path d="M120,80 L120,60 L110,60 L125,40 L140,60 L130,60 L130,80 Z" fill="%232ecc71"/><path d="M170,80 L170,55 L160,55 L175,35 L190,55 L180,55 L180,80 Z" fill="%2327ae60"/><path d="M220,80 L220,60 L210,60 L225,40 L240,60 L230,60 L230,80 Z" fill="%232ecc71"/><path d="M270,80 L270,55 L260,55 L275,35 L290,55 L280,55 L280,80 Z" fill="%2327ae60"/></svg>');
+    background-repeat: repeat-x;
+    background-size: 300px 80px;
+}
+
+.road {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: #95a5a6;
+    overflow: hidden;
+}
+
+.road::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #fff 50%, transparent 50%);
+    background-size: 20px 2px;
+    background-repeat: repeat-x;
+}
+
+.bus {
+    position: absolute;
+    bottom: 28px;
+    left: 70%;
+    width: 120px;
+    height: 40px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40"><rect x="10" y="10" width="100" height="25" rx="5" fill="%23ffffff"/><rect x="10" y="25" width="100" height="10" fill="%23e74c3c"/><rect x="5" y="30" width="110" height="5" rx="2" fill="%23333"/><circle cx="30" cy="35" r="5" fill="%23333"/><circle cx="90" cy="35" r="5" fill="%23333"/><rect x="20" y="15" width="15" height="10" fill="%2395a5a6"/><rect x="45" y="15" width="15" height="10" fill="%2395a5a6"/><rect x="70" y="15" width="15" height="10" fill="%2395a5a6"/><rect x="95" y="15" width="10" height="10" fill="%2395a5a6"/></svg>');
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-item {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .logo-container {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    
+    .swap-btn {
+        margin: 10px auto;
+        transform: rotate(90deg);
+    }
+    
+    .city, .houses, .mountains, .trees {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-link {
+        font-size: 0.8rem;
+    }
+    
+    .date-selection {
+        flex-wrap: wrap;
+    }
+    
+    .date-btn {
+        margin: 5px;
+        flex: 0 0 40%;
+        text-align: center;
+    }
+    
+    .booking-form {
+        padding: 15px 10px;
+    }
+    
+    .bus {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

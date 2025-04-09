@@ -1,0 +1,328 @@
+:root {
+    --primary-red: #b32d2e;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333;
+    --green: #4CAF50;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.header {
+    /* background-color: var(--primary-red); */
+    padding: 15px 0;
+}
+
+.search-btn {
+    background-color: #e35d5e;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.search-btn:hover {
+    background-color: #c23e3f;
+}
+
+.sort-by {
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.sort-option {
+    color: #666;
+    padding: 5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sort-option.active {
+    color: var(--primary-red);
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-red);
+}
+
+.filter-section {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.filter-title {
+    font-weight: 600;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.filters {
+    padding: 15px;
+    background-color: white;
+}
+
+.bus-type-option {
+    text-align: center;
+    padding: 10px;
+    font-size: 9px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.bus-type-option i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.price-range {
+    padding: 15px;
+}
+
+.time-option {
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.time-option i {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.date-nav {
+    background-color: white;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.date-nav .date-item {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    min-width: 80px;
+}
+
+.date-nav .date-item.active {
+    background-color: var(--primary-red);
+    color: white;
+}
+
+.bus-card {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.bus-card .assured-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.travel-info {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.bus-name {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.bus-type {
+    color: #666;
+    font-size: 14px;
+}
+
+.bus-number {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.tracking {
+    font-size: 14px;
+    color: #666;
+}
+
+.savings {
+    color: var(--green);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.time-info {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.departure-time, .arrival-time {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.location {
+    font-size: 14px;
+    color: #666;
+}
+
+.duration {
+    font-size: 12px;
+    background-color: #f5f5f5;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 10px auto;
+    display: inline-block;
+}
+
+.price-info {
+    padding: 15px;
+    text-align: right;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+}
+
+.current-price {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.select-seats-btn {
+    background-color: #f17a30;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.seats-available {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.rating {
+    background-color: var(--green);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.additional-info {
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-dropdown {
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 10px;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.info-card {
+    background-size: cover;
+    height: 80px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+}
+
+.info-card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    font-weight: 600;
+}
+
+.info-card.blue {
+    background-color: #3f51b5;
+}
+
+.info-card.pink {
+    background-color: #e91e63;
+}
+
+.info-card.green {
+    background-color: #1194a8;
+}
+
+.info-card.orange {
+    background-color: #ff5722;
+}
+
+.filter-btn {
+    background-color: #f5f5f5;
+    border: none;
+    color: #333;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+    .bus-card {
+        padding: 10px;
+    }
+    
+    .departure-time, .arrival-time {
+        font-size: 20px;
+    }
+    
+    .current-price {
+        font-size: 20px;
+    }
+    
+    .bus-name {
+        font-size: 16px;
+    }
+}
