@@ -17,7 +17,7 @@ const CheckSchedules = () => {
     setLoading(true);
     setError(null);
     try {
-      const res = await axios.get('http://localhost:5000/api/buses');
+      const res = await axios.get('https://ticketbooking-es95.onrender.com/api/buses');
       setBuses(res.data);
     } catch (err) {
       setError('Error fetching bus schedules. Please try again later.');
