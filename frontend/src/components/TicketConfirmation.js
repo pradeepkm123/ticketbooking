@@ -21,7 +21,7 @@ const TicketConfirmation = () => {
     setLoading(true);
     setError(null);
     try {
-      await axios.post('http://localhost:5000/api/bookings/tickets', booking);
+      await axios.post('https://ticketbooking-es95.onrender.com/api/bookings/tickets', booking);
       navigate('/view-tickets', { state: { booking } });
     } catch (err) {
       setError('Error confirming booking. Please try again.');
